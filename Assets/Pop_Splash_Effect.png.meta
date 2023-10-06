@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 598b0179ad4425644a1b8d035e9044ab
+guid: 521ac74c76f667f41bc38c689c27a0b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3556439083511685423
-    second: Balloon sprite_0
+      213: 7751304165289241629
+    second: Pop_Splash_Effect_0
+  - first:
+      213: -1898077844254991391
+    second: Pop_Splash_Effect_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Balloon sprite_0
+      name: Pop_Splash_Effect_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 46
-        width: 296
-        height: 420
+        x: 0
+        y: 345
+        width: 4726
+        height: 3974
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +115,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f21a70ee0820b5130800000000000000
-      internalID: 3556439083511685423
+      spriteID: d1c2216f11a229b60800000000000000
+      internalID: 7751304165289241629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pop_Splash_Effect_1
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 3735
+        width: 414
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb5421d14ca8a5e0800000000000000
+      internalID: -1898077844254991391
       vertices: []
       indices: 
       edges: []
@@ -128,8 +152,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Balloon sprite_0: 3556439083511685423
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
