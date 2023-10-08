@@ -17,7 +17,7 @@ public class BalloonController : MonoBehaviour
     {
         if(transform.position.y > 400f)
         {
-            SceneManager.LoadScene("Game"); 
+            ResetPosition();
         }
     }
 
