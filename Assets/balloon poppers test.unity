@@ -324,7 +324,6 @@ GameObject:
   m_Component:
   - component: {fileID: 634119269}
   - component: {fileID: 634119268}
-  - component: {fileID: 634119267}
   - component: {fileID: 634119266}
   - component: {fileID: 634119265}
   m_Layer: 0
@@ -384,33 +383,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.86
---- !u!50 &634119267
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634119264}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &634119268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -472,7 +444,7 @@ Transform:
   m_GameObject: {fileID: 634119264}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -188, y: -771, z: 0}
+  m_LocalPosition: {x: -200, y: -500, z: 0}
   m_LocalScale: {x: 15.8, y: 15.7, z: 33.79}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -488,7 +460,6 @@ GameObject:
   m_Component:
   - component: {fileID: 944750517}
   - component: {fileID: 944750516}
-  - component: {fileID: 944750515}
   - component: {fileID: 944750514}
   - component: {fileID: 944750513}
   m_Layer: 0
@@ -548,33 +519,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2.19
---- !u!50 &944750515
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944750512}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &944750516
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -636,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 944750512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: -455, z: 0}
+  m_LocalPosition: {x: 0, y: -500, z: 0}
   m_LocalScale: {x: 15.02, y: 15.7, z: 33.79}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -786,7 +730,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1039561320}
   - component: {fileID: 1039561319}
-  - component: {fileID: 1039561318}
   - component: {fileID: 1039561317}
   - component: {fileID: 1039561316}
   m_Layer: 0
@@ -846,33 +789,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.51
---- !u!50 &1039561318
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039561315}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1039561319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -934,7 +850,7 @@ Transform:
   m_GameObject: {fileID: 1039561315}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 104, y: -634, z: 0}
+  m_LocalPosition: {x: 200, y: -500, z: 0}
   m_LocalScale: {x: 15.8, y: 15.7, z: 33.79}
   m_ConstrainProportionsScale: 0
   m_Children: []
