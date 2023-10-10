@@ -7,17 +7,22 @@ using UnityEngine.SceneManagement;
 
 public class BalloonController : MonoBehaviour
 {
+    public UILogic logic;
     public float upSpeed;
-    int score = 0;
 
-    public TextMeshProUGUI scoreText; 
-   
+
+
+   void Start()
+    {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<UILogic>();
+    }
     // Update is called once per frame
     void Update()
     {
         if(transform.position.y > 400f)
         {
             ResetPosition();
+
         }
     }
 
@@ -29,10 +34,9 @@ public class BalloonController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        score++;
-        scoreText.text = score.ToString(); 
-
+        logic.addScore();
         ResetPosition();
+
     }
 
     private void ResetPosition()
