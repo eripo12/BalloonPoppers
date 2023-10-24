@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UILogic : MonoBehaviour
 {
 
-    public float playerScore;
+    public float playerScore = 0;
     public Text scoreText;
 
     public float gameTime = 0.1f;
@@ -24,7 +24,22 @@ public class UILogic : MonoBehaviour
         scoreMultiplier = gameTime / 10 + 1;
         playerScore = playerScore + (1 * scoreMultiplier);
         scoreText.text = playerScore.ToString("#");
-    }  
+    }
+
+    public void subtractScore()
+    {
+        if (playerScore > 0)
+        {
+            playerScore = playerScore - (1 * scoreMultiplier);
+            scoreText.text = playerScore.ToString("#");
+        }
+        if (playerScore < 0)
+        {
+            playerScore = 0;
+            scoreText.text = playerScore.ToString("#");
+        }
+        
+    }
 
     void Update()
     {
@@ -44,6 +59,8 @@ public class UILogic : MonoBehaviour
     public float getScorePerSec() {
         return scorePerTime;
     }
+
+    
 
     
 }
