@@ -12,7 +12,7 @@ public class BalloonController : MonoBehaviour
     public float upSpeedMultiplier = 1;
     public int ballonWave = 0;
     private float gameTime = .01f;
-
+    public AudioSource popSoundEffect;
 
 
    void Start()
@@ -58,6 +58,8 @@ public class BalloonController : MonoBehaviour
         
     private void OnMouseDown()
     {
+        popSoundEffect.pitch = UnityEngine.Random.Range(1f, 1.5f);
+        popSoundEffect.Play();
         logic.addScore();
         upSpeedMultiplier += .1f;
         ResetPosition();
