@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 98f1f60b8ade9e1408feacb86ce95067
+  - enabled: 1
+    path: Assets/Scenes/balloon poppers test.unity
+    guid: 72e8e92564404c7438c7f44e0a20141e
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d5bc4eefe7e2923468d83d77c5e644e2, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0b3a99e706bcb8e49972cd85b47624d0, type: 2}
