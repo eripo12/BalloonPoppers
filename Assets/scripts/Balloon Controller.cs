@@ -28,7 +28,6 @@ public class BalloonController : MonoBehaviour
         {
             logic.subtractScore();
             ResetPosition();
-            upSpeedMultiplier -= .1f;
         }
     }
 
