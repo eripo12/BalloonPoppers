@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UILogic : MonoBehaviour
 {
@@ -15,14 +16,18 @@ public class UILogic : MonoBehaviour
     public float scorePerTime = 1.0f;
     public Text scorePerTimeText;
 
-    public float scoreMultiplier; 
-
+    public float scoreMultiplier;
+    private int difficultyMultiplier = 1;
  
 
     public void addScore()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+            difficultyMultiplier = 2;
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+            difficultyMultiplier = 4;
         scoreMultiplier = gameTime / 10 + 1;
-        playerScore = playerScore + (1 * scoreMultiplier);
+        playerScore = playerScore + (1 * scoreMultiplier * difficultyMultiplier);
         scoreText.text = playerScore.ToString("#");
     }
 
