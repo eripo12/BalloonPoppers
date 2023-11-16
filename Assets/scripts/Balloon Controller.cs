@@ -13,7 +13,7 @@ public class BalloonController : MonoBehaviour
     public int ballonWave = 0;
     private float gameTime = .01f;
     public AudioSource popSoundEffect;
-
+    [SerializeField] private ParticleSystem BalloonParticle = default;
 
    void Start()
     {
@@ -60,6 +60,8 @@ public class BalloonController : MonoBehaviour
     {
         popSoundEffect.pitch = UnityEngine.Random.Range(1f, 1.5f);
         popSoundEffect.Play();
+        BalloonParticle.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); 
+        BalloonParticle.Play();
         logic.addScore();
         upSpeedMultiplier += .1f;
         ResetPosition();
