@@ -6,7 +6,7 @@ using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
-    private int difficultLevel = 1;
+    public int difficultLevel;
     
     void Start()
     {
@@ -17,9 +17,9 @@ public class MainMenu : MonoBehaviour
     {
         switch (index)
         {
-            case 0: difficultLevel = 1; break;
-            case 1: difficultLevel = 2; break;
-            case 2: difficultLevel = 3; break;
+            case 0: difficultLevel = 1; Debug.Log(difficultLevel); break;
+            case 1: difficultLevel = 2; Debug.Log(difficultLevel); break;
+            case 2: difficultLevel = 3; Debug.Log(difficultLevel); break;
 
         }
     }

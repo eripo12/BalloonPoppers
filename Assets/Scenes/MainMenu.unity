@@ -221,10 +221,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 145509956}
+      - m_Target: {fileID: 1859938122}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: DropDown
-        m_Mode: 3
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2b2c6bb0ae3cb42839c6d64ca36dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficultLevel: 1
 --- !u!1 &183796170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,6 +2005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2b2c6bb0ae3cb42839c6d64ca36dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficultLevel: 1
 --- !u!1 &1870217234
 GameObject:
   m_ObjectHideFlags: 0
