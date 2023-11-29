@@ -27,8 +27,10 @@ public class BalloonController : MonoBehaviour
         if(transform.position.y > 400f)
         {
             logic.subtractScore();
+            logic.subtractMissesLeft();
             ResetPosition();
         }
+        logic.gameOver();
     }
 
     private void FixedUpdate()
@@ -70,7 +72,6 @@ public class BalloonController : MonoBehaviour
     private void ResetPosition()
     {
         float randomX = Random.Range(-200f, 200f);
-
         transform.position = new Vector2(randomX, -450f); 
 
     }

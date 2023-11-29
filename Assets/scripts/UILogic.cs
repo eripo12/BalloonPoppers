@@ -19,7 +19,7 @@ public class UILogic : MonoBehaviour
     public float scoreMultiplier;
     private int difficultyMultiplier = 1;
 
-    public float missesLeft = 3;
+    public float missesLeft = 10;
     public Text missesLeftText;
     public void addScore()
     {
@@ -50,6 +50,21 @@ public class UILogic : MonoBehaviour
     public void Start()
     {
         
+    }
+
+    public void subtractMissesLeft()
+    {
+        missesLeft = missesLeft - 1;
+        missesLeftText.text = missesLeft.ToString("#");
+    }
+
+    public void gameOver()
+    {
+        if (missesLeft == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+            missesLeft = 10;
+        }
     }
 
     void Update()
