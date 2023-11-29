@@ -18,8 +18,9 @@ public class UILogic : MonoBehaviour
 
     public float scoreMultiplier;
     private int difficultyMultiplier = 1;
- 
 
+    public float missesLeft = 3;
+    public Text missesLeftText;
     public void addScore()
     {
         if (SceneManager.GetActiveScene().buildIndex == 2)
@@ -43,6 +44,11 @@ public class UILogic : MonoBehaviour
             playerScore = 0;
             scoreText.text = playerScore.ToString("#");
         }
+        
+    }
+
+    public void Start()
+    {
         
     }
 
