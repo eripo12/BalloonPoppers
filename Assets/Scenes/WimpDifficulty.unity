@@ -408,7 +408,7 @@ MonoBehaviour:
   scorePerTime: 0.1
   scorePerTimeText: {fileID: 1991036944}
   scoreMultiplier: 0
-  missesLeft: 10
+  missesLeft: 15
   missesLeftText: {fileID: 521473260}
 --- !u!1 &227308599
 GameObject:
@@ -1229,7 +1229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 15
 --- !u!222 &521473261
 CanvasRenderer:
   m_ObjectHideFlags: 0

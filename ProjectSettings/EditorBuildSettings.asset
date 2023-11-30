@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExtremeDifficulty.unity
     guid: 73f32f1bb2d5adf499c7b0409e949536
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 9b361a34a1efcc1458a3c86aaa342eaa
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d5bc4eefe7e2923468d83d77c5e644e2, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0b3a99e706bcb8e49972cd85b47624d0, type: 2}
