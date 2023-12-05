@@ -21,6 +21,9 @@ public class UILogic : MonoBehaviour
 
     public float missesLeft = 10;
     public Text missesLeftText;
+
+    static float finalScore;
+    
     public void addScore()
     {
         if (SceneManager.GetActiveScene().buildIndex == 2)
@@ -62,6 +65,10 @@ public class UILogic : MonoBehaviour
     {
         if (missesLeft == 0)
         {
+            finalScore = getScore();
+            Debug.Log(playerScore);
+            finalScore = playerScore;
+            Debug.Log(finalScore);
             SceneManager.LoadScene("GameOver");
             missesLeft = 10;
         }
@@ -79,11 +86,17 @@ public class UILogic : MonoBehaviour
 
     public float getScore()
     {
-        return playerScore;
+        return finalScore;
     }
 
     public float getScorePerSec() {
         return scorePerTime;
+    }
+
+    public void addBalloons()
+    {
+        missesLeft++;
+        missesLeftText.text = missesLeft.ToString("#");
     }
 
     

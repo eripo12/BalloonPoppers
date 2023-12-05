@@ -14,6 +14,7 @@ public class BalloonController : MonoBehaviour
     private float gameTime = .01f;
     public AudioSource popSoundEffect;
     [SerializeField] private ParticleSystem BalloonParticle = default;
+    private int balloonsPopped = 0;
 
    void Start()
     {
@@ -26,7 +27,7 @@ public class BalloonController : MonoBehaviour
         gameTime += Time.deltaTime;
         if(transform.position.y > 400f)
         {
-            logic.subtractScore();
+           // logic.subtractScore();
             logic.subtractMissesLeft();
             ResetPosition();
         }
@@ -65,6 +66,12 @@ public class BalloonController : MonoBehaviour
         BalloonParticle.Play();
         logic.addScore();
         upSpeedMultiplier += .1f;
+        balloonsPopped++;
+        Debug.Log(balloonsPopped);
+        if (balloonsPopped % 5 == 0)
+        {
+            logic.addBalloons();
+        }
         ResetPosition();
 
     }
@@ -73,6 +80,5 @@ public class BalloonController : MonoBehaviour
     {
         float randomX = Random.Range(-200f, 200f);
         transform.position = new Vector2(randomX, -450f); 
-
     }
 }
