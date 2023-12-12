@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class finalScore : MonoBehaviour
 {
     public UILogic logic;
     public Text finalScoreText;
-    private float score = 0;
+    private float Escore = 0;
+    private int intScore;
+    public ScoreManager sm;
 
 
     // Start is called before the first frame update
@@ -23,7 +26,9 @@ public class finalScore : MonoBehaviour
     // Update is called once per frame
     void endScore()
     {
-        score = logic.getScore();
-        finalScoreText.text = score.ToString("#");
+        Escore = logic.getScore();
+        intScore = Mathf.RoundToInt(Escore);
+        sm.AddScore(new Score("Eric", intScore));
+        finalScoreText.text = Escore.ToString("#");
     }
 }

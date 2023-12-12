@@ -5039,7 +5039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  upSpeed: 2.75
+  upSpeed: 2.25
   upSpeedMultiplier: 1
   ballonWave: 4
   popSoundEffect: {fileID: 204688437}
@@ -5329,7 +5329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  upSpeed: 2.72
+  upSpeed: 2.22
   upSpeedMultiplier: 1
   ballonWave: 2
   popSoundEffect: {fileID: 227308604}
@@ -5890,7 +5890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  upSpeed: 2.79
+  upSpeed: 2.29
   upSpeedMultiplier: 1
   ballonWave: 1
   popSoundEffect: {fileID: 351979140}
@@ -16087,7 +16087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  upSpeed: 2.6
+  upSpeed: 2.1
   upSpeedMultiplier: 1
   ballonWave: 1
   popSoundEffect: {fileID: 634119270}
@@ -16408,7 +16408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  upSpeed: 2.8
+  upSpeed: 2.3
   upSpeedMultiplier: 1
   ballonWave: 3
   popSoundEffect: {fileID: 756649782}
@@ -16761,7 +16761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  upSpeed: 2.72
+  upSpeed: 2.22
   upSpeedMultiplier: 1
   ballonWave: 2
   popSoundEffect: {fileID: 1022977586}
@@ -16887,7 +16887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  upSpeed: 2.5
+  upSpeed: 2
   upSpeedMultiplier: 1
   ballonWave: 3
   popSoundEffect: {fileID: 1039561321}

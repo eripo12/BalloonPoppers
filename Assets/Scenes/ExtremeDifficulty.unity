@@ -5296,6 +5296,7 @@ MonoBehaviour:
   scoreMultiplier: 0
   missesLeft: 5
   missesLeftText: {fileID: 1720114585}
+  sm: {fileID: 0}
 --- !u!1 &227308599
 GameObject:
   m_ObjectHideFlags: 0

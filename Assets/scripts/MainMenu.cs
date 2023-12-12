@@ -34,7 +34,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(difficultLevel); //loads index 1 in build
     }
 
-    
+    public void scoreboard()
+    {
+        SceneManager.LoadScene(5);
+    }
 
 
     public void QuitGame()

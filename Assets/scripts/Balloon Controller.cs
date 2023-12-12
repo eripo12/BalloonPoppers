@@ -65,7 +65,7 @@ public class BalloonController : MonoBehaviour
         BalloonParticle.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); 
         BalloonParticle.Play();
         logic.addScore();
-        upSpeedMultiplier += .1f;
+        upSpeedMultiplier += .05f;
         balloonsPopped++;
         Debug.Log(balloonsPopped);
         if (balloonsPopped % 5 == 0)

@@ -23,7 +23,7 @@ public class UILogic : MonoBehaviour
     public Text missesLeftText;
 
     static float finalScore;
-    
+
     public void addScore()
     {
         if (SceneManager.GetActiveScene().buildIndex == 2)
@@ -69,7 +69,8 @@ public class UILogic : MonoBehaviour
             Debug.Log(playerScore);
             finalScore = playerScore;
             Debug.Log(finalScore);
-            SceneManager.LoadScene("GameOver");
+
+            SceneManager.LoadScene(5);
             missesLeft = 10;
         }
     }
