@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+       // PlayerPrefs.DeleteAll();
     }
 
     public void DropDown(int index)
